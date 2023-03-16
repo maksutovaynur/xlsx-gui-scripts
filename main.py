@@ -74,6 +74,7 @@ class MainWindow(QMainWindow):
         for df in out_dfs:
             fileName, _ = QFileDialog.getSaveFileName(None, "Save Excel", None, "Excel Files (*.xlsx)")
             df.to_excel(fileName)
+        self.label.setText('')
         self.status.showMessage('Done')
         self.open_button.setEnabled(True)
 
