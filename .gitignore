@@ -1,0 +1,7 @@
+.*
+*.xls*
+!.gitignore
+output/
+build/
+dist/
+*.spec
